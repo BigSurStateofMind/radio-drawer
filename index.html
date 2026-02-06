@@ -148,87 +148,87 @@
     // Your curated drawer. You can add/remove stations any time.
     // iPhone tends to like AAC and HLS streams best.
     const stations = [
-      {
-        name: "WFMU",
-        country: "US",
-        vibe: "Freeform / College aesthetic",
-        stream: "https://wfmu.org/audiostream?type=aac",
-        open: "https://wfmu.org/"
-      },
-      {
-  name: "Radio UNAM",
-  country: "MX",
-  vibe: "University radio / Experimental + intellectual CDMX",
-  stream: "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_UNAM_HQAAC.aac",
-  open: "https://www.radio.unam.mx/"
-},
-{
-  name: "Red Light Radio",
-  country: "NL",
-  vibe: "Amsterdam underground / Electronic + experimental",
-  stream: "https://stream.publicradio.be/redlightradio.aac",
-  open: "https://www.redlightradio.net/"
-},
-{
-  name: "Sveriges Radio P3",
-  country: "SE",
-  vibe: "Swedish music / Modern + youth culture",
-  stream: "https://sverigesradio.se/topsy/direkt/132-hi-mp3.m3u8",
-  open: "https://sverigesradio.se/p3"
-}
+  {
+    name: "WFMU",
+    country: "US",
+    vibe: "Freeform / College aesthetic",
+    stream: "https://wfmu.org/audiostream?type=aac",
+    open: "https://wfmu.org/"
+  },
+  {
+    name: "KEXP",
+    country: "US",
+    vibe: "Curated / Global taste",
+    stream: "https://kexp.streamguys1.com/kexp160.aac",
+    open: "https://www.kexp.org/listen/"
+  },
+  {
+    name: "KPFA",
+    country: "US",
+    vibe: "Pacifica / Movement radio",
+    stream: "",
+    open: "https://kpfa.org/listen-live/"
+  },
+  {
+    name: "KPCC (LAist 89.3)",
+    country: "US",
+    vibe: "Public radio / Civic sanity",
+    stream: "",
+    open: "https://laist.com/listen"
+  },
+  {
+    name: "RTÉ Radio 1",
+    country: "IE",
+    vibe: "Public radio / News + culture",
+    stream: "",
+    open: "https://www.rte.ie/radio/radio1/"
+  },
+  {
+    name: "Resonance FM",
+    country: "UK",
+    vibe: "Arts / Experimental / Left",
+    stream: "https://stream.resonance.fm/resonance",
+    open: "https://www.resonancefm.com/"
+  },
+  {
+    name: "Noods Radio",
+    country: "UK",
+    vibe: "Underground / Modern electronic",
+    stream: "",
+    open: "https://noodsradio.com/"
+  },
+  {
+    name: "Kiosk Radio",
+    country: "BE",
+    vibe: "Club culture with brains",
+    stream: "",
+    open: "https://kioskradio.com/"
+  },
 
-      {
-        name: "KEXP",
-        country: "US",
-        vibe: "Curated / Global taste",
-        stream: "https://kexp.streamguys1.com/kexp160.aac",
-        open: "https://www.kexp.org/listen/"
-      },
-      {
-        name: "KPFA",
-        country: "US",
-        vibe: "Pacifica / Movement radio",
-        stream: "", // some streams change; use Open for now if Play fails
-        open: "https://kpfa.org/listen-live/"
-      },
-      {
-        name: "KPCC (LAist 89.3)",
-        country: "US",
-        vibe: "Public radio / Civic sanity",
-        stream: "", // use Open for now
-        open: "https://laist.com/listen"
-      },
-   
+  // New additions:
+  {
+    name: "Radio UNAM",
+    country: "MX",
+    vibe: "University radio / Experimental + intellectual CDMX",
+    stream: "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_UNAM_HQAAC.aac",
+    open: "https://www.radio.unam.mx/"
+  },
+  {
+    name: "Red Light Radio",
+    country: "NL",
+    vibe: "Amsterdam underground / Electronic + experimental",
+    stream: "",
+    open: "https://www.redlightradio.net/"
+  },
+  {
+    name: "Sveriges Radio P3",
+    country: "SE",
+    vibe: "Swedish music / Modern + youth culture",
+    stream: "",
+    open: "https://sverigesradio.se/p3"
+  }
+];
 
-      {
-        name: "RTÉ Radio 1",
-        country: "IE",
-        vibe: "Public radio / News + culture",
-        stream: "", // use Open for now
-        open: "https://www.rte.ie/radio/radio1/"
-      },
-      {
-        name: "Resonance FM",
-        country: "UK",
-        vibe: "Arts / Experimental / Left",
-        stream: "https://stream.resonance.fm/resonance",
-        open: "https://www.resonancefm.com/"
-      },
-      {
-        name: "Noods Radio",
-        country: "UK",
-        vibe: "Underground / Modern electronic",
-        stream: "", // use Open for now
-        open: "https://noodsradio.com/"
-      },
-      {
-        name: "Kiosk Radio",
-        country: "BE",
-        vibe: "Club culture with brains",
-        stream: "", // use Open for now
-        open: "https://kioskradio.com/"
-      }
-    ];
 
     const grid = document.getElementById("grid");
     const audio = document.getElementById("audio");
